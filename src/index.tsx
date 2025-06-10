@@ -1,5 +1,7 @@
 import { Hono } from "hono";
 import { auth } from "@/lib/auth";
+import responseStreamJsx from "./lib/render";
+import { HomePage } from "./views/pages/home";
  
 const app = new Hono<{
 	Variables: {
@@ -24,6 +26,10 @@ app.use("*", async (c, next) => {
  
 app.on(["POST", "GET"], "/api/auth/*", (c) => {
 	return auth.handler(c.req.raw);
+});
+
+app.get("/", (c) => {
+	return responseStreamJsx(c, HomePage);
 });
  
  
