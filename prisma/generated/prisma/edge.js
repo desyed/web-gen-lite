@@ -163,7 +163,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/Users/syedshihab/Documents/workshop/hobby/web-gen-lite/prisma/generated/prisma",
+      "value": "/home/shanto/projects/uqidev/web-gen-lite/prisma/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -172,12 +172,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "darwin-arm64",
+        "value": "debian-openssl-3.0.x",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/Users/syedshihab/Documents/workshop/hobby/web-gen-lite/prisma/schema.prisma",
+    "sourceFilePath": "/home/shanto/projects/uqidev/web-gen-lite/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
@@ -191,6 +191,7 @@ const config = {
     "db"
   ],
   "activeProvider": "sqlite",
+  "postinstall": true,
   "inlineDatasources": {
     "db": {
       "url": {

@@ -1,15 +1,19 @@
 {
   "name": "web-gen-lite",
   "scripts": {
-    "dev": "bun run --hot src/index.tsx"
+    "dev": "bun run --hot ./server.ts",
+    "tailwind": "bunx @tailwindcss/cli -i ./src/styles/global.css -o ./static/styles.css --watch"
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",
     "better-auth": "^1.2.8",
+    "flowbite": "^3.1.2",
     "hono": "^4.7.11"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.8",
     "@types/bun": "latest",
-    "prisma": "^6.8.2"
+    "prisma": "^6.8.2",
+    "tailwindcss": "^4.1.8"
   }
 }
